@@ -20,9 +20,6 @@ exports.getLogin = function(req, res) {
 
 
 exports.about = function(req, res) {
-  if (req.user) {
-    return res.redirect('/');
-  }
   res.render('account/about', {
     title: 'About'
   });
