@@ -26,7 +26,7 @@
       <LocalStorage name="localStoreTwo" sizeInMB="10" cleanOnRoleRecycle="false" />
     </LocalResources>
     <Startup>
-        <Task commandLine="logdna_batch.bat" executionContext="limited" taskType="simple" >
+        <Task commandLine="logdna_batch.cmd" executionContext="limited" taskType="simple" >
         </Task>
     </Startup>
   </WebRole>
