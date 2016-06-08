@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 InDaLoop
+  p.lead Find the best deals in your area, invite your friends to sweeten the deal!
+  p#demo Hi, You are Logged in! at
+  if user
+    button(onclick='getLocation()') Get Location!
+  hr
+  .row
+    .col-sm-6
+      h2 What is InDaLoop?
+      p InDaLoop is a tiered coupon platform that allows businesses a means to provide varying levels of discounts on each product they offer based on the number of buyers that have committed to purchasing that particular product. Think “Groupon meets Kickstarter”. As more buyers commit to purchasing a particular product, the price of the product will correspondingly drop. Sellers are incentivized to provide deeper discounts at higher tiers because they will be effectively guaranteed the sales volume to make up for the price cut. Buyers are incentivized to spread the word on their purchase in order to “sweeten” the deal and reach the highest possible discount tier for the product they are purchasing.
+      p
+        a.btn.btn-default(href='#', role='button') View details »
+    .col-sm-6
+      h2 Value Prop
+      p For sellers that want to maximize sales volume while minimizing the risk of diminished margins, InDaLoop will allow sellers to create controlled, tiered discount deals that will allow them to control how much of a discount they will give on their goods or services based on the number of buyers who have committed to purchase the product.
+      p
+        a.btn.btn-default(href='#', role='button') View details »
