@@ -4,8 +4,15 @@ block content
   h1 InDaLoop
   p.lead Find the best deals in your area, invite your friends to sweeten the deal!
   p#demo Hi, You are Logged in! at
-  if user
-    button(onclick='getLocation()') Get Location!
+
+  button(onclick='getLocation()') Get Location!
+  script(type='text/javascript').
+      function getLocation() {
+          console.log("Mother of");
+          for(var i = 0; i < 1000; i++) {
+              console.log("Count is at: " + i);
+          }
+      }
   hr
   .row
     .col-sm-6

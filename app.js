@@ -104,11 +104,17 @@ app.use(function(req, res, next) {
   next();
 });
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 /**
  * Primary app routes.
  */
 app.get('/', homeController.index);
+app.post('/', homeController.index);
 app.get('/about', userController.about);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
