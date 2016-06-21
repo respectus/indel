@@ -10,6 +10,11 @@ var User = require('../models/User');
  * Login page.
  */
 exports.getLogin = function(req, res) {
+
+    console.log("Mother of");
+    for(var i = 0; i < 1000; i++) {
+        console.log("Count is at: " + i);
+    }
   if (req.user) {
     return res.redirect('/');
   }
